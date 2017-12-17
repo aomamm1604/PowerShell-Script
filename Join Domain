@@ -1,0 +1,5 @@
+<#
+  Join a local computer to specific organization unit
+#>
+$Path = “ Your OU Path ”
+Add-Computer -DomainName <<Your Domain Name>> -OUPath $Path -Credential domain\useraccount -Confirm | Restart-Computer
